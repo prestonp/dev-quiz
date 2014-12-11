@@ -64,26 +64,26 @@ questions.push({
   , body: [
   '<pre class="language-markup"><code class="lang-markup">'
   , [ '<div class="things">'
-  , '  <div class="thing">'
-  , '    <h2 class="thing-title"></h2>'
-  , '    <p class="thing-body"></p>'
-  , '  </div>'
-  , '  <div class="thing">'
-  , '    <h2 class="thing-title"></h2>'
-  , '    <p class="thing-body"></p>'
-  , '  </div>'
-  , '  <div class="thing">'
-  , '    <h2 class="thing-title"></h2>'
-  , '    <p class="thing-body"></p>'
-  , '  </div>'
-  , '  <div class="thing">'
-  , '    <h2 class="thing-title"></h2>'
-  , '    <p class="thing-body"></p>'
-  , '  </div>'
-  , '</div>'
-  ].join('\n')
-  .replace(/\</g, '&lt;')
-  .replace(/\>/g, '&gt;')
+    , '  <div class="thing">'
+    , '    <h2 class="thing-title"></h2>'
+    , '    <p class="thing-body"></p>'
+    , '  </div>'
+    , '  <div class="thing">'
+    , '    <h2 class="thing-title"></h2>'
+    , '    <p class="thing-body"></p>'
+    , '  </div>'
+    , '  <div class="thing">'
+    , '    <h2 class="thing-title"></h2>'
+    , '    <p class="thing-body"></p>'
+    , '  </div>'
+    , '  <div class="thing">'
+    , '    <h2 class="thing-title"></h2>'
+    , '    <p class="thing-body"></p>'
+    , '  </div>'
+    , '</div>'
+    ].join('\n')
+      .replace( new RegExp('<', 'g'), '&lt;' )
+      .replace( new RegExp('>', 'g'), '&gt;' )
   , '</code></pre>'
   ].join('')
   , answers: [
